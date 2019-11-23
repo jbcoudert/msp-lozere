@@ -1,0 +1,76 @@
+@keyframes rotate {
+  0%, 50% {
+    transform: rotate(0deg) translateY(0px) translateX(0px) rotate(0deg); } }
+nav {
+  min-height: 10vh; }
+
+.main {
+  display: flex;
+  justify-content: center;
+  min-height: 90vh; }
+  .main #centre {
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: rotateZ(0.01deg);
+    /* IE 10 bug */ }
+    .main #centre i {
+      color: white; }
+  .main .circle {
+    position: absolute;
+    background-color: fuchsia;
+    height: 150px;
+    width: 150px;
+    left: -75px;
+    top: -75px; }
+  .main .main-circle {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999; }
+  .main .outer {
+    animation: rotate 2s ease-out 1;
+    height: 100px;
+    width: 100px;
+    left: -50px;
+    top: -50px; }
+  .main .at-1-oclock {
+    background-color: red;
+    transform: translateY(200px); }
+  .main .at-2-oclock {
+    background-color: yellow;
+    transform: rotate(-140deg) translateY(200px) rotate(140deg); }
+  .main .at-3-oclock {
+    background-color: green;
+    transform: rotate(-120deg) translateY(200px) rotate(120deg);
+    z-index: 2; }
+  .main .at-4-oclock {
+    background-color: blue;
+    transform: rotate(-100deg) translateY(200px) rotate(100deg);
+    z-index: 1; }
+  .main .at-5-oclock {
+    background-color: purple;
+    transform: rotate(-80deg) translateY(200px) rotate(80deg); }
+  .main .at-6-oclock {
+    background-color: red;
+    transform: rotate(-60deg) translateY(200px) rotate(60deg); }
+  .main .at-7-oclock {
+    background-color: yellow;
+    transform: rotate(80deg) translateY(200px) rotate(-80deg); }
+  .main .at-8-oclock {
+    background-color: green;
+    transform: rotate(100deg) translateY(200px) rotate(-100deg);
+    z-index: 2; }
+  .main .at-9-oclock {
+    background-color: blue;
+    transform: rotate(120deg) translateY(200px) rotate(-120deg);
+    z-index: 1; }
+  .main .at-10-oclock {
+    background-color: purple;
+    transform: rotate(140deg) translateY(200px) rotate(-140deg); }
+  .main .at-11-oclock {
+    background-color: purple;
+    transform: rotate(160deg) translateY(200px) rotate(-160deg); }
+
+/*# sourceMappingURL=style.css.map */
