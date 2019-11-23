@@ -8,24 +8,26 @@
 }
 
 nav {
-    min-height: 10vh;
+    .ul {
+        display: flex;
+        justify-content: center;
+    }
 }
 .main {
     display: flex;
     justify-content: center;
-    min-height: 90vh;
+    min-height: 83vh;
     #centre {
         position: relative;
         left: 50%;
         top: 50%;
         transform: rotateZ(0.01deg); /* IE 10 bug */
         i {
-            color: white;
+            color: blue;
         }
     }
     .circle {
         position: absolute;
-        background-color: fuchsia;
         height: 150px;
         width: 150px;
         left: -75px;
@@ -36,72 +38,74 @@ nav {
         display: flex;
         justify-content: center;
         align-items: center;
-        z-index: 999;
+        // z-index: 999;
         // height: 300px;
         // width: 300px;
     }
     .outer {
         animation: rotate 2s ease-out 1;
-        height: 100px;
-        width: 100px;
-        left: -50px;
-        top: -50px;
+        height: 80px;
+        width: 80px;
+        left: -40px;
+        top: -40px;
     }
     .at-1-oclock {
         background-color: red;
-        transform:  translateY(200px) ;
+        transform:  translateY(200px) translateX(400px);
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
     
     .at-2-oclock {
         background-color: yellow;
-        transform: rotate(-140deg) translateY(200px) rotate(140deg);
+        transform: translateY(150%) translateX(200%);
     }
     
     .at-3-oclock {
         background-color: green;
-        transform: rotate(-120deg) translateY(200px)  rotate(120deg);
-        z-index: 2;
+        transform: translateY(50px) translateX(300px);
+        
     }
     
     .at-4-oclock {
         background-color: blue;
-        transform: rotate(-100deg) translateY(200px) rotate(100deg);
-        z-index: 1;
+        transform:  translateY(20px) translateX(500px);
     }
     
     .at-5-oclock {
         background-color: purple;
-        transform: rotate(-80deg) translateY(200px) rotate(80deg);
+        transform: translateY(200px) translateX(200px);
     }
     .at-6-oclock {
-        background-color: red;
-        transform: rotate(-60deg) translateY(200px) rotate(60deg);
+        background-color: purple;
+        transform: translateY(-200px) translateX(200px);
     }
     
-    .at-7-oclock {
-        background-color: yellow;
-        transform: rotate(80deg) translateY(200px) rotate(-80deg);
-    }
+    // .at-7-oclock {
+    //     background-color: yellow;
+    //     transform: translateY(-200px) translateX(600px);
+    // }
     
     .at-8-oclock {
         background-color: green;
-        transform: rotate(100deg) translateY(200px)  rotate(-100deg);
+        transform: translateY(-200px) translateX(150px);
         z-index: 2;
     }
     
     .at-9-oclock {
         background-color: blue;
-        transform: rotate(120deg) translateY(200px) rotate(-120deg);
+        transform: translateY(-280px) translateX(300px);
         z-index: 1;
     }
     
     .at-10-oclock {
         background-color: purple;
-        transform: rotate(140deg) translateY(200px) rotate(-140deg);
+        transform: translateY(200px) translateX(200px);
     }
 
     .at-11-oclock {
         background-color: purple;
-        transform: rotate(160deg) translateY(200px) rotate(-160deg);
+        transform: translateY(200px) translateX(200px);
     }
 }

@@ -15,18 +15,32 @@
 </head>
 
 <body>
-  <nav class="light-blue lighten-1" role="navigation">
-    <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo">Logo</a>
-      <ul class="right hide-on-med-and-down">
-        <li><a href="#">Navbar Link</a></li>
+    <nav class="nav-extended">
+        <div class="nav-wrapper">
+          <a href="#" class="brand-logo">Logo</a>
+          <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+          <ul id="nav-mobile" class="right hide-on-med-and-down">
+            <li><a href="sass.html">Sass</a></li>
+            <li><a href="badges.html">Components</a></li>
+            <li><a href="collapsible.html">JavaScript</a></li>
+          </ul>
+        </div>
+        <div class="nav-content center">
+          <ul class="tabs tabs-transparent center ul">
+            <li class="tab"><a href="medecin.html">Medecin</a></li>
+            <li class="tab"><a class="active" href="#test2">Test 2</a></li>
+            <li class="tab disabled"><a href="#test3">Disabled Tab</a></li>
+            <li class="tab"><a href="#test4">Test 4</a></li>
+          </ul>
+        </div>
+      </nav>
+    
+      <ul class="sidenav subNav" id="mobile-demo">
+        <li><a href="sass.html">Sass</a></li>
+        <li><a href="badges.html">Components</a></li>
+        <li><a href="collapsible.html">JavaScript</a></li>
       </ul>
-
-      <ul id="nav-mobile" class="sidenav">
-        <li><a href="#">Navbar Link</a></li>
-      </ul>
-      <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-    </div>
-  </nav>
+            
 
   <!-- <canvas> -->
     <div class="container-fluid main">
@@ -34,8 +48,8 @@
         <div id="centre">
           <div class="middle circle main-circle pulse"> <i class="fas fa-hand-holding-heart large center"></i></div>
 
-          <div class="outer circle at-1-oclock"></div>
-          <div class="outer circle at-2-oclock"></div>
+          <div class="outer circle at-1-oclock">Medecin</div>
+          <div class="outer circle at-2-oclock">kiné</div>
           <div class="outer circle at-3-oclock"></div>
           <div class="outer circle at-4-oclock"></div>
           <div class="outer circle at-5-oclock"></div>
